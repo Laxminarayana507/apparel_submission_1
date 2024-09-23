@@ -55,7 +55,7 @@ public class ApparelSubmissionServlet extends HttpServlet {
         String jdbcUrl = "jdbc:mysql://localhost:3306/apparel_db?useSSL=false&serverTimezone=UTC";
         
         String dbUser = "root"; // Use your MySQL username
-        String dbPass = "Lucky"; // Use your MySQL password
+        String dbPass = "PASSWORD"; // Use your MySQL password
         
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
