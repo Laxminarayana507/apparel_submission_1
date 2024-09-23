@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Apparel for Recycling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Submit Your Apparel for Recycling or Donation</h1>
+        <form action="submitApparel" method="post" enctype="multipart/form-data">
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="apparelType">Apparel Type:</label>
+            <select id="apparelType" name="apparelType" required>
+                <option value="Shirt">Shirt</option>
+                <option value="Pants">Pants</option>
+                <option value="Jacket">Jacket</option>
+                <option value="Shoes">Shoes</option>
+            </select>
+
+            <label for="apparel_condition">apparel_condition:</label>
+            <select id="apparel_condition" name="apparel_condition" required>
+                <option value="New">New</option>
+                <option value="Lightly Used">Lightly Used</option>
+                <option value="Worn Out">Worn Out</option>
+            </select>
+
+            <label for="location">Location (City, Country):</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="image">Upload Image of Apparel:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
